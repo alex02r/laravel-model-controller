@@ -2,21 +2,25 @@
 
 @section('content')
     <div class="container py-5">
-        <div class="row justify-content-center">
+        <div class="row row-gap-4">
             <div class="col-12">
                 <h1>testo prova</h1>
             </div>
-            <div class="col-8">
-                @foreach ($movies as $movie)
-                    <ul>
-                        <li>Titolo: {{ $movie->title}}</li>
-                        <li>Titolo originale:{{ $movie->original_title}}</li>
-                        <li>Nazionalità:{{ $movie->nationality}}</li>
-                        <li>Data di uscita:{{ $movie->date}}</li>
-                        <li>Valutazione:{{ $movie->vote}}</li>
-                    </ul>
-                @endforeach
-            </div>
+            @foreach ($movies as $movie)
+                <div class="col-3">
+                    <div class="movie shadow">
+                        <div class="movie-title">
+                            <h5>Titolo: {{ $movie->title}}</h5>
+                            <span class="text-secondary">{{ $movie->original_title}}</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li>Nazionalità: {{ $movie->nationality}}</li>
+                            <li>Data di uscita: {{ $movie->date}}</li>
+                            <li>Valutazione: {{ $movie->vote}}</li>
+                        </ul>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
 @endsection
