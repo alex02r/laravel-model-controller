@@ -4,7 +4,7 @@
     <div class="container py-5">
         <div class="row row-gap-4">
             <div class="col-12">
-                <h1>testo prova</h1>
+                <h2>Lista dei film:</h2>
             </div>
             @foreach ($movies as $movie)
                 <div class="col-3">
