@@ -9,10 +9,12 @@
             @foreach ($movies as $movie)
                 <div class="col-3">
                     <div class="movie shadow">
-                        <div class="movie-title">
-                            <h5>Titolo: {{ $movie->title}}</h5>
-                            <span class="text-secondary">{{ $movie->original_title}}</span>
-                        </div>
+                        <a href="{{ route('movie', ['id' => $movie->id]) }}" class="my-link">
+                            <div class="movie-title">
+                                <h5>Titolo: {{ $movie->title}}</h5>
+                                <span class="text-secondary">{{ $movie->original_title}}</span>
+                            </div>
+                        </a>
                         <ul class="list-unstyled">
                             <li>Nazionalità: {{ $movie->nationality}}</li>
                             <li>Data di uscita: {{ $movie->date}}</li>
