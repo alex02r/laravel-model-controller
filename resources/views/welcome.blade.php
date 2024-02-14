@@ -15,11 +15,6 @@
                                 <span class="text-secondary">{{ $movie->original_title}}</span>
                             </div>
                         </a>
-                        <ul class="list-unstyled">
-                            <li>Nazionalità: {{ $movie->nationality}}</li>
-                            <li>Data di uscita: {{ $movie->date}}</li>
-                            <li>Valutazione: {{ $movie->vote}}</li>
-                        </ul>
                     </div>
                 </div>
             @endforeach
