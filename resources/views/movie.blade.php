@@ -19,6 +19,9 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-12">
+                <a href="{{ route('home') }}" class="link-warning link-underline-opacity-25 link-underline-opacity-100-hover">Torna alla Home</a>
+            </div>
         </div>
     </div>
 @endsection

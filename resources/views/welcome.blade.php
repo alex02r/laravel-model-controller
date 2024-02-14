@@ -8,14 +8,14 @@
             </div>
             @foreach ($movies as $movie)
                 <div class="col-3">
-                    <div class="movie shadow">
-                        <a href="{{ route('movie', ['id' => $movie->id]) }}" class="my-link">
+                    <a href="{{ route('movie', ['id' => $movie->id]) }}" class="my-link">
+                        <div class="movie shadow">
                             <div class="movie-title">
                                 <h5>Titolo: {{ $movie->title}}</h5>
                                 <span class="text-secondary">{{ $movie->original_title}}</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             @endforeach
         </div>
